@@ -3,8 +3,8 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-Password = os.getenv('Password')
-Login = os.getenv('Login')
+PASSWORD = os.getenv('PASSWORD')
+LOGIN = os.getenv('LOGIN')
 
 recipient_name ='Ivan'
 sender_name='bi_bika'
@@ -40,3 +40,4 @@ server = smtplib.SMTP_SSL('smtp.yandex.ru', 465)
 server.login(Login, Password)
 server.sendmail(sender_email, recipient_email, text)  
 server.quit()
+
